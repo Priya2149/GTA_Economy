@@ -45,7 +45,7 @@ The goal is to enable content or mod creators to tokenize digital assets as NFTs
 ---
 
 ## Architecture Overview
-```text
+```
 GTA_Economy/
 │
 ├── backend/
@@ -80,10 +80,13 @@ GTA_Economy/
         ├── App.css
         ├── index.js
         └── setupTests.js
+```
+---
 
 ## Project Status
 
-> **Status:** In-progress, currently paused after implementing backend scaffolding and Ethereum smart-contract integration.  
-> This repository is shared publicly to demonstrate full-stack and blockchain engineering skills.
+**Status:** In-progress, currently paused after implementing backend scaffolding and Ethereum smart-contract integration.  
 
-Note: This is an educational, exploratory prototype — not affiliated with or based on any commercial game IP.
+This repository is shared publicly to demonstrate full-stack and blockchain engineering skills.
+
+**Note:** This is an educational, exploratory prototype — not affiliated with or based on any commercial game IP.
