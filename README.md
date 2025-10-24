@@ -53,22 +53,38 @@ The goal is to enable content or mod creators to tokenize digital assets as NFTs
 GTA_Economy/
 │
 ├── backend/
-│ ├── config/
-│ │ ├── blockchain.js
-│ │ └── db.js
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── services/
-│ └── server.js
+│   ├── config/
+│   │   ├── blockchain.js
+│   │   └── db.js
+│   ├── controllers/
+│   │   └── contentController.js
+│   ├── models/
+│   │   ├── contentModel.js
+│   │   └── userModel.js
+│   ├── routes/
+│   │   ├── contentRoutes.js
+│   │   └── marketplaceRoutes.js
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   ├── marketplaceService.js
+│   │   └── revenueSharing.js
+│   └── server.js
 │
 └── frontend/
-├── src/
-│ ├── components/
-│ ├── contexts/
-│ ├── pages/
-│ ├── App.js
-│ └── index.js
+    ├── public/
+    └── src/
+        ├── components/
+        │   ├── Dashboard.js
+        │   └── MenuBar.js
+        ├── contexts/
+        │   └── EthereumContext.js
+        ├── pages/
+        ├── App.js
+        ├── App.css
+        ├── index.js
+        └── setupTests.js
+
 
 ## Project Status
 
