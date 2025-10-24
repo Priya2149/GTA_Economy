@@ -8,7 +8,7 @@ The goal is to enable content or mod creators to tokenize digital assets as NFTs
 ## Tech Stack
 
 ### Frontend
-- **React / Next.js (TypeScript)**
+- **React (JavaScript, Create React App)**
 - Context API for wallet and contract state (`EthereumContext.js`)
 - Modular UI components (`Dashboard.js`, `MenuBar.js`)
 
@@ -18,15 +18,10 @@ The goal is to enable content or mod creators to tokenize digital assets as NFTs
 - **PostgreSQL** for persistent storage
 
 ### Blockchain Layer
-- **Ethers.js** for blockchain interaction
-- **Solidity** smart contracts for minting and revenue sharing
-- **MetaMask** wallet integration
-- Blockchain configuration handled in `config/blockchain.js`
-
-### DevOps & Tooling
-- **Docker** for containerization
-- Render / Vercel ready configuration (planned)
-- GitHub Actions for CI/CD (planned)
+- **Ethers.js** for blockchain interaction and smart-contract integration
+- Connected to external **Solidity contracts** for NFT minting and revenue-sharing (contract source not included in this repository)
+- **MetaMask** wallet connectivity for user authentication and transaction signing
+- Blockchain configuration handled in `backend/config/blockchain.js`
 
 ---
 
@@ -42,14 +37,15 @@ The goal is to enable content or mod creators to tokenize digital assets as NFTs
 
 ## Planned / Future Work
 
-- Deploy Solidity contract to Ethereum testnet
+- Deploy external Solidity contract to Ethereum testnet (Goerli/Sepolia)
 - Add NFT metadata upload and minting UI
 - Build creator dashboard for analytics and royalty tracking
 - Implement unit and integration testing (Jest / Hardhat)
   
 ---
 
-##  Architecture Overview
+## Architecture Overview
+```text
 GTA_Economy/
 │
 ├── backend/
@@ -84,7 +80,6 @@ GTA_Economy/
         ├── App.css
         ├── index.js
         └── setupTests.js
-
 
 ## Project Status
 
